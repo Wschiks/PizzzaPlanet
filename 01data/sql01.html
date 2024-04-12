@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">-- phpMyAdmin SQL Dump</p>
+<p class="p1">-- version 4.9.3</p>
+<p class="p1">-- https://www.phpmyadmin.net/</p>
+<p class="p1">--</p>
+<p class="p1">-- Host: localhost:8889</p>
+<p class="p1">-- Gegenereerd op: 12 apr 2024 om 11:05</p>
+<p class="p1">-- Serverversie: 5.7.26</p>
+<p class="p1">-- PHP-versie: 7.4.2</p>
+<p class="p2"><br></p>
+<p class="p1">SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";</p>
+<p class="p1">SET time_zone = "+00:00";</p>
+<p class="p2"><br></p>
+<p class="p1">--</p>
+<p class="p1">-- Database: `pizzza_planet`</p>
+<p class="p1">--</p>
+<p class="p2"><br></p>
+<p class="p1">-- --------------------------------------------------------</p>
+<p class="p2"><br></p>
+<p class="p1">--</p>
+<p class="p1">-- Tabelstructuur voor tabel `producten`</p>
+<p class="p1">--</p>
+<p class="p2"><br></p>
+<p class="p1">CREATE TABLE `producten` (</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`id` int(11) NOT NULL,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`productnaam` varchar(255) NOT NULL,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`beschrijving` text NOT NULL,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`prijs` double NOT NULL,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`img` varchar(255) DEFAULT NULL</p>
+<p class="p1">) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<p class="p2"><br></p>
+<p class="p1">--</p>
+<p class="p1">-- Gegevens worden geëxporteerd voor tabel `producten`</p>
+<p class="p1">--</p>
+<p class="p2"><br></p>
+<p class="p1">INSERT INTO `producten` (`id`, `productnaam`, `beschrijving`, `prijs`, `img`) VALUES</p>
+<p class="p1">(23, 'Margherita', 'Klassieke pizza met tomatensaus, mozzarella en basilicum.', 8.99, 'pizzza_img/Margherita.png'),</p>
+<p class="p1">(24, 'Pepperoni', 'Pizza met pittige pepperoni, tomatensaus en mozzarella.', 11.99, 'pizzza_img/pepperoni.png'),</p>
+<p class="p1">(25, 'Hawaiian', 'Pizza met ham, ananas, tomatensaus en mozzarella.', 9.99, 'pizzza_img/hawaiian.png'),</p>
+<p class="p1">(26, 'Vegetariana', 'Vegetarische pizza met champignons, paprika, ui, tomatensaus en mozzarella.', 1362.98, 'pizzza_img/Veggie.png'),</p>
+<p class="p1">(29, 'Quattro Stagioni', 'Pizza verdeeld in vier secties met verschillende toppings: champignons, ham, artisjokken, zwarte olijven, tomatensaus en mozzarella.', 10.99, 'pizzza_img/quattrostagioni.png'),</p>
+<p class="p1">(30, 'Quattro Formaggi', 'Pizza met vier soorten kaas: mozzarella, gorgonzola, pecorino en taleggio.', 13.99, 'pizzza_img/quattroformaggi.png'),</p>
+<p class="p1">(31, 'Diavola', 'Pikante pizza met pittige salami, rode pepers, tomatensaus en mozzarella.', 9.99, 'pizzza_img/Diavola.png');</p>
+<p class="p2"><br></p>
+<p class="p1">--</p>
+<p class="p1">-- Indexen voor geëxporteerde tabellen</p>
+<p class="p1">--</p>
+<p class="p2"><br></p>
+<p class="p1">--</p>
+<p class="p1">-- Indexen voor tabel `producten`</p>
+<p class="p1">--</p>
+<p class="p1">ALTER TABLE `producten`</p>
+<p class="p1"><span class="Apple-converted-space">  </span>ADD PRIMARY KEY (`id`);</p>
+<p class="p2"><br></p>
+<p class="p1">--</p>
+<p class="p1">-- AUTO_INCREMENT voor geëxporteerde tabellen</p>
+<p class="p1">--</p>
+<p class="p2"><br></p>
+<p class="p1">--</p>
+<p class="p1">-- AUTO_INCREMENT voor een tabel `producten`</p>
+<p class="p1">--</p>
+<p class="p1">ALTER TABLE `producten`</p>
+<p class="p1"><span class="Apple-converted-space">  </span>MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;</p>
+</body>
+</html>

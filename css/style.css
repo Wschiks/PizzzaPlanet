@@ -1,0 +1,335 @@
+/* algemeen */
+
+.wit {
+    color: white;
+}
+
+/* header.php */
+.font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.start {
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+}
+
+.flexmidden {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: #FAC564;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/* index.php */
+
+
+.indexpizza {
+    width: 23%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.font> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+
+
+.size {
+    font-size: 30px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.h2index {
+    display: flex;
+    font-size: 100px;
+    font-weight: 40px;
+}
+
+.pizzaplanet {
+    color: white;
+    align-items: center;
+}
+
+.bestellen {
+    margin-top: 100px;
+    align-items: center;
+    background-color: #FAC564;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.fotohacktergrond {
+    height: 100vh;
+    background-image: url('http://localhost:8888/webapp01/eindopdracht/img/hout.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* footer.php */
+
+
+.foto {
+    height: 20px;
+    width: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+h2 {
+    color: #808080;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 21px;
+}
+
+
+
+.vakje {
+    height: 150px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.black {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+.geel {
+    width: 30%;
+    height: 150px;
+    background-color: #FAC564;
+}
+
+
+/* menuaanpassen.php */
+
+
+.margin{
+    margin:10px;
+}
+
+
+
+
+
+
+input {
+    width: 50%;
+   
+
+}
+
+/* bestels.php */
+
+.space {
+    display: flex;
+
+}
+
+.font {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+
+.tussen {
+    height: 30px;
+}
+
+
+.product {
+    display: flex;
+    margin: 20px;
+}
+
+.links {
+    margin-right: 20px;
+}
+
+.rechts {
+    flex: 1;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.add-button {
+    background-color: #007bff;
+    /* Blue color */
+    color: #fff;
+    /* White text */
+    padding: 8px 16px;
+    /* Padding around text */
+    border: none;
+    /* No border */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor on hover */
+    font-size: 16px;
+    /* Font size */
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+    /* Darker blue color on hover */
+}
+
+
+
+
+
+input {
+    width: 50%;
+}
+
+/* login.php */
+
+
+
+.fotohacktergrond {
+    height: 100vh;
+    background-image: url('http://localhost:8888/webapp01/eindopdracht/img/hout.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wit {
+    color: white;
+}
+
+/* nieuwlogin.php */
+
+
+
+.fotohacktergrond {
+    height: 100vh;
+    background-image: url('http://localhost:8888/webapp01/eindopdracht/img/hout.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+/* button 27 */
+.button-27 {
+    appearance: none;
+    background-color: #FAC564;
+    border: 2px solid #ffc04c;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10%;
+    will-change: transform;
+}
+
+.button-27:disabled {
+    pointer-events: none;
+}
+
+.button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
