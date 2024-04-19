@@ -1,0 +1,136 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Gegenereerd op: 19 apr 2024 om 13:57
+-- Serverversie: 5.7.26
+-- PHP-versie: 7.4.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `pizzza_planet`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `levering`
+--
+
+CREATE TABLE `levering` (
+  `bestelling_id` int(11) NOT NULL,
+  `leveringsdatum` date NOT NULL,
+  `afleveradres` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `producten`
+--
+
+CREATE TABLE `producten` (
+  `id` int(11) NOT NULL,
+  `productnaam` varchar(255) NOT NULL,
+  `beschrijving` text NOT NULL,
+  `prijs` double NOT NULL,
+  `img` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `producten`
+--
+
+INSERT INTO `producten` (`id`, `productnaam`, `beschrijving`, `prijs`, `img`) VALUES
+(25, 'Hawaiian', 'een pizza hawaiian', 9.99, 'pizzza_img/hawaiian.png'),
+(26, 'Vegetariana', 'Vegetarische pizza met champignons, paprika, ui, tomatensaus en mozzarella.', 1362.98, 'pizzza_img/Veggie.png'),
+(29, 'Quattro Stagioni', 'Pizza verdeeld in vier secties met verschillende toppings: champignons, ham, artisjokken, zwarte olijven, tomatensaus en mozzarella.', 10.99, 'pizzza_img/quattrostagioni.png'),
+(30, 'Quattro Formaggi', 'Pizza met vier soorten kaas: mozzarella, gorgonzola, pecorino en taleggio.', 13.99, 'pizzza_img/quattroformaggi.png'),
+(31, 'Diavola', 'Pikante pizza met pittige salami, rode pepers, tomatensaus en mozzarella.', 9.99, 'pizzza_img/Diavola.png'),
+(33, 'Pepperoni', 'Pizza met pittige pepperoni, tomatensaus en mozzarella.', 11.99, 'pizzza_img/Pepperonia.png'),
+(38, 'Pizza al Zoe', 'De beste pizza met alle beste ingrediënten', 22.22, 'pizzza_img/zoe.png'),
+(41, 'verbrande kokosnoot', 'lekker', 5768657, 'qewrtesdfcv');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `gebruikersnaam` varchar(255) NOT NULL,
+  `wachtwoord` varchar(255) NOT NULL,
+  `rol` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `users`
+--
+
+INSERT INTO `users` (`id`, `gebruikersnaam`, `wachtwoord`, `rol`) VALUES
+(4, 'admin', 'admin', 'admin'),
+(16, 'qwe', 'asd', ''),
+(17, '456', '789', ''),
+(18, '123', '1234', '');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `winkelmandje`
+--
+
+CREATE TABLE `winkelmandje` (
+  `id` int(11) NOT NULL,
+  `product_naam` varchar(255) NOT NULL,
+  `aantal_pizza` int(11) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `prijs` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexen voor geëxporteerde tabellen
+--
+
+--
+-- Indexen voor tabel `producten`
+--
+ALTER TABLE `producten`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexen voor tabel `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexen voor tabel `winkelmandje`
+--
+ALTER TABLE `winkelmandje`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT voor geëxporteerde tabellen
+--
+
+--
+-- AUTO_INCREMENT voor een tabel `producten`
+--
+ALTER TABLE `producten`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+
+--
+-- AUTO_INCREMENT voor een tabel `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT voor een tabel `winkelmandje`
+--
+ALTER TABLE `winkelmandje`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
