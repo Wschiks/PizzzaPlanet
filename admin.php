@@ -24,13 +24,3 @@
     </div>
 </body>
 
-<style>
-    .mid {
-        display: flex;
-        justify-content: center;
-    }
-
-    .width100 {
-        width: 100%;
-    }
-</style>

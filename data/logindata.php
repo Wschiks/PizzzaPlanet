@@ -1,8 +1,7 @@
 <?php
 
  include ('../connection.php'); 
- echo 'hallo';
-
+ 
 $sql = "INSERT INTO users(gebruikersnaam, wachtwoord) VALUES (:gebruikersnaam,:wachtwoord)";
 $stmt = $conn->prepare($sql);
 $stmt -> bindParam(':gebruikersnaam', $_POST['gebruikersnaam']) ;

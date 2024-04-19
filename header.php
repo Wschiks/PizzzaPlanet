@@ -3,8 +3,8 @@
 <header>
 
     <div class="header flexmidden">
-        <a href="index.php">  <img class="start" src="img/pizzaLogo.png" alt=""></a>
-      
+        <a href="index.php"> <img class="start" src="img/pizzaLogo.png" alt=""></a>
+
         <div class="foto">
         </div>
 
@@ -14,12 +14,16 @@
 
             <a href="bestels.php">Bestellen</a>
 
-            <a href="toevegoen.php">Contact</a>
-
             <a href="login.php">
 
                 <img src="img/login.png" alt="">
             </a>
+
+            <a href="shop.php">
+
+                <img src="img/shop.png" alt="">
+            </a>
+
 
         </p>
 
@@ -27,5 +31,5 @@
 </header>
 
 <style>
-  
+
 </style>

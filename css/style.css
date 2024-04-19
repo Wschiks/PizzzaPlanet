@@ -23,7 +23,10 @@
 .flexmidden {
     display: flex;
     align-items: center;
+   
+    
 }
+
 
 .header {
     background-color: #FAC564;
@@ -164,22 +167,43 @@ h2 {
 /* menuaanpassen.php */
 
 
-.margin{
-    margin:10px;
+.margin {
+    margin: 10px;
 }
 
 
-
-
-
+#description{
+    width: 50%;
+}
 
 input {
     width: 50%;
-   
-
 }
 
 /* bestels.php */
+.achtergrondbestels {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fblack-abstract-textured-backdrop-for-photo-booth-d180--307652218306947049%2F&psig=AOvVaw0FscCPve4U17Ghp4_FkPRH&ust=1713423279514000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDfxKHVyIUDFQAAAAAdAAAAABAl');
+}
+
+.midden{
+    padding: 5px;
+    width: 100%;
+}
+.opmaak{
+    background-color: #ffcb6a;
+    border-radius: 40px;
+}
+
+.invoeg {
+text-align: center;
+    height: 80px;
+    width: 50%;
+}
+
+.zoek {
+    height: 80px;
+    width: 15%;
+}
 
 .space {
     display: flex;

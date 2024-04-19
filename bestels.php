@@ -1,23 +1,34 @@
 <?php include ('connection.php'); ?>
 <!DOCTYPE html>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
-
 <html lang="nl">
-
 <?php include ('header.php'); ?>
 
 <body>
 
 
+    <form action="" method="GET">
+        <section class="midden">
+            <input class="invoeg opmaak" type="text" name="zoekterm" placeholder="Zoek producten">
+            <button class="zoek opmaak" type="submit">Zoeken</button>
+            <section class="midden">
+             
+            </section>
+    </form>
+
     <?php
-    $sql = "SELECT * FROM producten";
+
+    if (isset($_GET['zoekterm'])) {
+        $zoekterm = '%' . $_GET['zoekterm'] . '%';
+        $sql = "SELECT * FROM producten WHERE productnaam LIKE :zoekterm OR beschrijving LIKE :zoekterm";
+    } else {
+        $sql = "SELECT * FROM producten";
+    }
+
     $stmt = $conn->prepare($sql);
+
+    if (isset($zoekterm)) {
+        $stmt->bindParam(':zoekterm', $zoekterm);
+    }
     $stmt->execute();
     $result = $stmt->fetchAll();
 
@@ -39,14 +50,19 @@
         if (array_key_exists('prijs', $key)) {
             echo '<h6 class="font">', $key['prijs'], '</h6>';
         }
-        echo '<button class="button-27" role="button">Add</button>';
+        ?>
+        <form action="data/winkelmanddata.php" method="post">
+
+            <input class="button-27" type="submit" name="Add">
+        </form>
+
+        <?php
         echo '</div>';
         echo '</div>';
     }
     ?>
 
-
     <?php include ('footer.php'); ?>
 </body>
 
-</html>
+</html> d

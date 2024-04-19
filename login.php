@@ -69,6 +69,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <style>
+*{
+    margin: 0px;
+}
+
 .midden{
     display: flex;
     align-items: center;
